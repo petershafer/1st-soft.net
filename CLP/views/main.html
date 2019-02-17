@@ -1,0 +1,38 @@
+<div>
+
+	<h2 ng-hide="tag" class="btn-full">All Photographs</h2>
+	<h2 ng-show="tag" class="btn-full">Photographs Tagged {{tag}}</h2>
+	<h3 ng-hide="tag" class="btn-mobile">All Photographs</h3>
+	<h3 ng-show="tag" class="btn-mobile">Photographs Tagged {{tag}}</h3>
+
+	<div class="pagination" ng-show="pages.length > 1">
+		<ul>
+			<li ng-class="{'disabled':current_page==1}"><a ng-href="#{{page_url}}page/{{current_page-1}}/">Prev</a></li>
+			<li ng-class="{'active':page==current_page}" ng-repeat="page in pages"><a ng-href="#{{page_url}}page/{{page}}/">{{page}}</a></li>
+			<li ng-class="{'disabled':current_page==last_page}"><a ng-href="#{{page_url}}page/{{current_page+1}}/">Next</a></li>
+		</ul>
+	</div>
+
+  <ul class="thumbnails">
+	<li class="span2 thumbnail" style="background-color:#839ED8" ng-repeat="thing in awesomeThings" ng-hide="!thing">
+		<!-- <a data-toggle="lightbox" style="min-height:160px;" href="#fullview" ng-click="open(thing)"> -->
+		<a ng-href="#/photo/{{thing.id}}/">
+			<img ng-src="http://cloudant.com/db/1st-soft/clp_gallery/{{thing.id}}/thumb.jpg">
+		</a>
+		<div class="caption" ng-show="admin">
+			<a target="blank" ng-href="{{thing.value.source}}">Source</a> - <a target="blank" ng-href="https://cloudant.com/futon/document.html?1st-soft%2Fclp_gallery/{{thing.id}}">Edit</a>
+		</div>
+	</li>
+  </ul>
+
+	<div class="pagination" ng-show="pages.length > 1">
+		<ul>
+			<li ng-class="{'disabled':current_page==1}"><a ng-href="#{{page_url}}page/{{current_page-1}}/">Prev</a></li>
+			<li ng-class="{'active':page==current_page}" ng-repeat="page in pages"><a ng-href="#{{page_url}}page/{{page}}/">{{page}}</a></li>
+			<li ng-class="{'disabled':current_page==last_page}"><a ng-href="#{{page_url}}page/{{current_page+1}}/">Next</a></li>
+		</ul>
+	</div>
+
+  <p ng-hide="awesomeThings.length || !loaded"><i>There are no photos to display.</i></p>
+
+</div>

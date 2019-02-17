@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Portfolio Elements"
+AuthUserFile "/home/shafer/.htpasswds/public_html/1st-soft/portfolio/protected/passwd"
+require valid-user

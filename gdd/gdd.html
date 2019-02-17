@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Google Doc Download GM Script by Peter Shafer</title>
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+#thisismypage{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #B7CFFF;
+	padding-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+p{
+	margin: 10px 10px;
+}
+h1{
+	text-align: center;
+	margin: 0px;
+	padding: 10px 10px;
+	background-image: url('header.png');
+}
+h2{
+	margin: 10px 10px;
+}
+p.img{
+	text-align: center;
+}
+a{
+	color: #0005C6;
+}
+</style>
+</head>
+<body>
+
+<div style="margin-left:auto;margin-right:auto;width:728px;text-align:center;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 728;
+google_ad_height = 15;
+google_ad_format = "728x15_0ads_al_s";
+//2007-04-26: gdd
+google_ad_channel = "2622726070";
+google_color_border = "B7CFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0005C6";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div id="thisismypage">
+
+<h1>Google Doc Download GM Script (Updated May 23rd, 2007)</h1>
+
+<p>Users of Google's document and spreadsheet web service can easily access and manage their important documents in one central location.
+They still would like to be able to back up and archive their files on their own systems.  Unfortunately that isn't so easy.  You would
+have to open each document and choose to export them individually and becomes quite time consuming if you have more than a handful of
+documents. <img src="psy.gif" style="vertical-align:text-top;" alt="emoticon" /></p>
+
+<p>The Google Download Script was written to help streamline this process when combined with a download manager like 
+<a href="http://www.downthemall.net">DownThemAll</a>.</p>
+
+<h2>How it works</h2>
+
+<div style="width:120px; float:right; margin:0px 10px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as_rimg";
+google_cpa_choice = "CAAQ_fCXhAIaCM3ZaPrxIggYKPG193MwAA";
+google_ad_channel = "7262706154";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>&nbsp;
+</div>
+
+
+<p>Google Doc Download is written as a <a href="http://www.greasespot.net">Grease Monkey</a> script for use in 
+Firefox.  Make sure you have both of these installed before you try to use
+the script.  Once installed, the script will run anytime you access your Google Docs control panel.  Here is what you will see.</p>
+
+<p class="img"><img src="s1.png" alt="screen shot 1" /></p>
+
+<p style="clear:right;">Just navigate to the document list that you wish to download, select a format, and click download.  You now have a list of links
+to download all of the documents from the current section (All, Active, Starred, Speadsheets, Documents, etc) in google docs that you are viewing.
+Links will be generated for all documents in that section (even if the lists spans multiple pages).  The script does not look
+to see what documents you select below, it just generates links for every document.</p>
+
+<p class="img"><img src="s2.png" alt="screen shot 2" /></p>
+
+<p>Now use <a href="http://www.downthemall.net">DownThemAll</a> to mass download your 
+documents!  You have now mass downloaded your documents from google, can now archive them to the medium of your choosing and place
+it under your mattress so you can sleep at night knowing that if google exploded while you were sleeping you would still have your files when
+you wake up.
+<img src="yay.gif" style="vertical-align:text-top;" alt="emoticon" /></p>
+
+<h2>Download it</h2>
+
+<p><a href="googledocdownload.user.js">Click here to download &amp; install</a> <a href="googledocdownload.user.js"><img src="hur.gif" style="vertical-align:text-top; border-width: 0px;" alt="emoticon" /></a></p>
+
+<h2>Updates</h2>
+
+<p>May 23rd, 2007: The script was updated to reflect a tweak in the html of Google Docs.  Please update your script.<br/>
+I'll probably convert this to an extension in the near future so that the update process is more streamlined.</p>
+
+<h2>Bugs &amp; Contact</h2>
+
+<p><b>Please Note:</b> Certain file formats are not supported for either documents or spreadsheets.  Whenever this is the case you will
+download the next closest format instead.  For instance, the text and CSV formats are supported for spreadsheets, but not for documents.  In
+these cases you will download documents in RTF format instead.</p>
+
+<p>This script can become temperamental depending on how Google decides to upgrade their code.  GDD gathers link information by
+scraping the javascript code and places the download link with a long xpath expression.  So if the page html or javascript changes
+significantly then this script is liable to cease functioning.  Chances are I will find out pretty quickly since I use the script
+myself but you can always drop me a line at <b>gdd at 1st-soft.net</b>.</p>
+
+<p>This is also my first Grease Monkey script, so let me know if I messed up something in the gm configuration as well.
+<img src="durdurdur.gif" style="vertical-align:text-top;" alt="emoticon" /></p>
+
+<p>Google Doc Download was written by Peter Shafer, student developer, in April 2007.  Contact: <b>gdd at 1st-soft.net</b><br/>
+Thanks to <a href="http://www.plaidbuttonup.com/main/">F.D. Cleary</a> for helping me debug the script. <img src="emot-frogsiren.gif" style="vertical-align:text-top;" alt="emoticon" /><br/>
+Emoticons originate from the <a href="http://forums.somethingawful.com">Something Awful forums</a>. <img src="emot-awesome.gif" style="vertical-align:text-top;" alt="emoticon" /></p>
+
+<h2>To do</h2>
+
+<p>Create an extension.  Once this has been tested enough in the wild and I know Google's code doesn't change dramatically that often, then I'll
+convert this into a Firefox browser extension.</p>
+<p>Add other google docs hacks to the script.  I've been messing around with google docs code trying to find ways to only view published
+or unpublished documents.  I think google docs is a great tool and I'll continue to seek ways to improve the user experience through
+grease monkey.</p>
+
+<div style="margin-left:auto;margin-right:auto;text-align:center;width:728px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+//2007-04-26: gdd
+google_ad_channel = "2622726070";
+google_color_border = "B7CFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0005C6";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<h2>License</h2>
+<p>
+
+<!-- Creative Commons License -->
+<a href="http://creativecommons.org/licenses/GPL/2.0/">
+<img alt="CC-GNU GPL" style="border-width:0px;" src="http://creativecommons.org/images
+/public/cc-GPL-a.png" /></a><br />
+This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.
+<!-- /Creative Commons License -->
+</p>
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+Each choice is a different place to eat.
+The content of the choice tag is the tags for
+that particular location.  Try to use
+consistent tags.  Tags must be seperated by
+commas.  Legal whitespace includes spaces and
+returns (\n).
+-->
+<whatsforlunch>
+   <choice name="Wendy's">
+       Burgers, Chicken, Salad, Breakfast, Coffee
+   </choice>
+   <choice name="McKinley's">
+       Close, Pizza, Chicken, Salad, Pasta, Coffee, Variety
+   </choice>
+   <choice name="Taj M'Sheetz">
+       Variety, Far Away, Coffee
+   </choice>
+   <choice name="Artist's Cup">
+       Not Fast, Soup, Salad, Sandwiches, Coffee, Unoften
+   </choice>
+   <choice name="Pampered Pallete">
+       Unoften, Soup, Coffee, Sandwiches
+   </choice>
+   <choice name="Julians">
+       Unoften, Soup, Coffee, Sandwiches, Dinner
+   </choice>
+   <choice name="Eddie's">
+       Unoften, Far Away, Hot Dogs
+   </choice>
+   <choice name="Compadres">
+       Not Fast, Far Away, Mexican, Dinner
+   </choice>
+   <choice name="Burger King">
+       Close, Burgers, Chicken, Salad, Breakfast, Coffee
+   </choice>
+   <choice name="Little Ceasars">
+       Close, Pizza, Unoften
+   </choice>
+   <choice name="McDonald's">
+       Burgers, Chicken, Salad, Breakfast, Coffee
+   </choice>
+   <choice name="Yuen's Garden">
+       Not Fast, Far Away, Chinese, Unoften
+   </choice>
+   <choice name="Applebees">
+       Not Fast, Far Away, Variety, Unoften, Dinner
+   </choice>
+   <choice name="Whole Darn Thing">
+       Sandwiches, Unoften
+   </choice>
+   <choice name="Super China Buffet">
+       Chinese, Unoften
+   </choice>
+   <choice name="Pizza From Mars">
+       Not Fast, Pizzal, Unoften
+   </choice>
+   <choice name="Arby's">
+       Sandwiches
+   </choice>
+   <choice name="Dairy Queen">
+       Far Away, Ice Cream, Hamburgers, Hot Dogs, Unoften
+   </choice>
+   <choice name="Taco Bell">
+       No Card, Mexican
+   </choice>
+   <choice name="Pizza Hut">
+       Not Fast, Far Away, Pizza
+   </choice>
+   <choice name="Number 1 China Buffet">
+       Not Fast, Chinese, Unoften
+   </choice>
+   <choice name="Subway">
+       No Card, Sandwiches
+   </choice>
+   <choice name="KFC">
+       Far Away, Chicken
+   </choice>
+   <choice name="Perkins">
+       Not Fast, Far Away, Variety, Unoften, Coffee, Dinner, Breakfast
+   </choice>
+   <choice name="Imperial Chinese Buffet">
+       Not Fast, Chinese, Unoften
+   </choice>
+   <choice name="Safari Bar">
+       Variety, Unique,  Dinner
+   </choice>
+   <choice name="Peppercorn and Vine">
+       Steak, Seafood, Chicken, Dinner
+   </choice>
+   <choice name="Dominoes Pizza">
+       Pizza
+   </choice>
+   <choice name="Hoss's">
+       Steak, Seafood, Chicken, Dinner
+   </choice>
+   <choice name="Red Lobster">
+       Seafood, Dinner
+   </choice>
+   <choice name="Ricci's">
+       Italian, Dinner
+   </choice>
+   <choice name="Larry's Market House and Grill">
+       Breakfast, Variety, Close
+   </choice>
+   <choice name="Hank's">
+       Ice Cream, Far Away
+   </choice>
+</whatsforlunch>

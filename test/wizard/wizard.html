@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title></title>
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.7.2.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/vader/jquery-ui-1.7.2.custom.css" />
+<style type="text/css">
+div.section{
+	display: none;
+	padding:15px;
+	margin-bottom:15px;
+}
+div.spacer{
+	display:none;
+}
+li a{
+	text-decoration:none;
+	color:black;
+	display:block;
+	padding:3px;
+}
+li a:hover{
+	background-color:#00aaff;
+}
+p{
+	margin:0px;
+}
+#wizard{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+}
+h2{
+	margin:3px;
+}
+ul{
+	margin:5px;
+}
+form{
+	margin:10px 4px;
+}
+</style>
+<script type="text/javascript">
+
+function myCallback(next,formcontent){
+	alert(next)
+	if(formcontent != ""){
+		alert(formcontent)
+	}
+}
+
+
+
+var hist = [];
+var forms = [];
+
+var wizardCallback; // = myCallback;
+
+function form2str(form){
+	var elements = form.elements;
+	var myarr = [];
+	for(var i = 0; i < elements.length; i++){
+		if(elements[i].name != ""){
+			myarr[myarr.length] = elements[i].name+"="+elements[i].value;
+		}
+	}
+	return myarr.join("&");
+}
+
+function next(){
+	var target;
+	if(this.href != undefined){
+		target = this.href.split("#")[1];
+		if(wizardCallback != undefined){
+			wizardCallback(target,"");
+		}
+	}else{
+		target = this.action.split("#")[1];
+		forms.push("section="+target+"&"+form2str(this))
+		if(wizardCallback != undefined){
+			wizardCallback(target,"section="+target+"&"+form2str(this));
+		}
+	}
+	target = target.split(",");
+	hist.push(target.join(","));
+	
+
+	
+	
+	if($(".section:visible").effect != undefined){
+		$(".section:visible").effect("drop",{},300,function(){
+			for(var i = 0; i < target.length; i++){
+				$("#"+target[i]).fadeIn("slow")
+			}
+			});
+	}else{
+		$(".section:visible").hide();
+		for(var i = 0; i < target.length; i++){
+			$("#"+target[i]).fadeIn("slow")
+		}
+		
+	}
+	return false;
+}
+
+$(document).ready(function(){
+	$(".section:first").fadeIn("slow");
+	$("a").click(next);
+	$("form").submit(next);
+	
+	//  ui-widget ui-widget-content ui-corner-all
+	$(".section").addClass("ui-widget");
+	$(".section").addClass("ui-widget-content");
+	$(".section").addClass("ui-corner-all");
+	
+
+	
+});
+
+</script>
+</head>
+<body>
+
+
+<div id="wizard">
+
+<div id="a1" class="section">
+<h2><a name="a1">When I download my documents:</a></h2>
+<ul>
+	<li><p><a href="#b1">I don't want to think about it</a></p></li>
+	<li><p><a href="#b2">I want to be able to download from the Google Docs interface</a></p></li>
+	<li><p><a href="#b3">I only want to download certain documents</a></p></li>
+	<li><p><a href="#b1">I'd like to be able to download on a schedule</a></p></li>
+	<li>
+	<form action="#b1,c1" onSubmit="">
+		<input type="text" name="wut" id="wut" /> <input type="submit" />
+	</form>
+	</li>
+</ul>
+</div>
+
+<div id="b1" class="section">
+<h2><a name="b1">I am comfortable with my system's terminal</a></h2>
+<ul>
+	<li><p><a href="#c1">Yes</a></p></li>
+	<li><p><a href="#b2">No</a></p></li>
+</ul>
+</div>
+
+<div id="c1" class="section">
+<h2><a name="c1">I have already installed python</a></h2>
+<ul>
+	<li><p><a href="#end">Yes</a></p></li>
+	<li><p><a href="#end">No</a></p></li>
+</ul>
+</div>
+
+<div id="b2" class="section">
+<h2><a name="b2">My web browser is</a></h2>
+<ul>
+	<li><p><a href="#c2">Firefox</a></p></li>
+	<li><p><a href="#end">Internet Explorer</a></p></li>
+	<li><p><a href="#end">Chrome, Opera, or Safari</a></p></li>
+</ul>
+</div>
+
+<div id="c2" class="section">
+<h2><a name="c2">I have already installed the Greasemonkey and DownThemAll Firefox addons</a></h2>
+<ul>
+	<li><p><a href="#end">Yes</a></p></li>
+	<li><p><a href="#end">No</a></p></li>
+</ul>
+</div>
+
+<div id="b3" class="section">
+<h2><a name="b3">I'd like to download from</a></h2>
+<ul>
+	<li><p><a href="#b2">Google Docs interface</a></p></li>
+	<li><p><a href="#c1">My system terminal</a></p></li>
+</ul>
+</div>
+
+<div id="end" class="section">
+<a name="end">The End</a>
+</div>
+
+</div>
+
+</body>
+</html>

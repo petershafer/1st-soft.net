@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Peter Shafer</title>
+<!--
+	Card centered on page using technique demonstrated here:
+	http://www.wpdfd.com/editorial/thebox/deadcentre4.html
+	Page background generated using JQuery Theme Roller:
+	http://jqueryui.com/themeroller/
+								-->
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+<style type="text/css" media="screen">
+body{
+	margin: 0px;
+	background: url('CardBG.png');
+}
+#pagecenter{
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	height: 1px;
+	overflow: visible;
+	visibility: visible;
+	display: block;
+}
+#card, #card.normal{
+	margin-left: -1.61in;
+	position: absolute;
+	top: -1in;
+	left: 50%;
+	width: 2.98in;
+	height: 1.48in;
+	visibility: visible;
+	border-style:solid;
+	border-width:1pt;
+	border-color:#000;
+	padding:0.26in;
+	background-color: #fff;
+	line-height:1.1;
+}
+#card.large{
+	margin-left: -3.22in;
+	position: absolute;
+	top: -2in;
+	left: 50%;
+	width: 5.96in;
+	height: 2.96in;
+	padding:0.52in;
+	visibility: visible;
+	line-height:1.2;
+	border-width:2pt;
+}
+#shadow, #shadow.normal{
+	margin-left: -1.54in;
+	position: absolute;
+	top: -0.93in;
+	left: 50%;
+	width: 3.5in;
+	height: 2in;
+	visibility: visible;
+	background-color: #000;
+	opacity:0.25;
+}
+#shadow.large{
+	margin-left: -3.08in;
+	position: absolute;
+	top: -1.86in;
+	left: 50%;
+	width: 7in;
+	height: 4in;
+	visibility: visible;
+	background-color: #000;
+	opacity:0.25;
+}
+h1,h2,h3,p{
+	margin:2px;
+	padding:0px;
+	font-family: freeserif, serif;
+}
+#card h1, #card.normal h1{
+	/*font-size:1.25em;*/
+	font-size:1.5pc;
+	border-style:solid;
+	border-width:0 0 1pt 0;
+	border-color:#005080;
+	font-weight:bold;
+	color: #005080;
+}
+#card.large h1{
+	font-size:3pc;
+	border-width:0 0 2pt 0;
+}
+#card h2, #card.normal h2{
+	text-align:right;
+	font-weight:normal;
+	/*font-size:0.85em;*/
+	font-size:0.85pc;
+	text-decoration: underline;
+	margin-right: 1pc;
+}
+#card.large h2{
+	font-size:1.7pc;
+	margin-right: 2pc;
+	
+}
+#card h3, #card.normal h3{
+	/*font-size:0.75em;*/
+	font-size:0.75pc;
+	font-weight:normal;
+}
+#card.large h3{
+	font-size:1.5pc;
+}
+#card p, #card.normal p{
+	/*font-size:0.65em;*/
+	font-size:0.65pc;
+	margin-left:1pc;
+}
+#card.large p{
+	font-size:1.3pc;
+	margin-left:2pc;
+}
+a{
+	color:#000;
+}
+#card div, #card.normal div{
+	display: block;
+	/*height: 0.35em;*/
+	height:0.3pc;
+	margin: 0px;
+	padding: 0px;
+	border-style:none;
+	width:100%;
+}
+#card.large div{
+	height:0.6pc;
+}
+#valid{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+#card h2 span{
+	display: none;
+}
+</style>
+<style type="text/css" media="print">
+#valid, h2 a{
+	display: none;
+}
+#card h2 span{
+	display: inline;
+}
+#card h2 span a{
+	display: inline;
+	white-space: nowrap;
+}
+</style>
+<style type="text/css" media="all">
+#ie6{
+	display:none;
+}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+#ie6{
+	display: block;
+	margin:25px;
+	font-size:16px;
+	background-color:#fff;
+}
+#shadow{
+	filter:alpha(opacity=25);
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+function toggle(){
+	if($("#card").attr('class') != 'large'){
+		$("#card").attr('class','large');
+		$("#shadow").attr('class','large');
+	}else{
+		$("#card").attr('class','normal');
+		$("#shadow").attr('class','normal');
+	}
+	return false;
+}
+$(function() {
+	$("#card").hover(toggle,toggle);
+});
+</script>
+</head>
+<body>
+<div id="ie6">
+<p>Your browser is out of date, and you should consider upgrading. For more information please <a href="http://www.stopie6.com/">click here</a>.</p>
+</div>
+<div id="pagecenter">
+	<div id="shadow" class="normal"></div>
+	<div id="card" class="normal">
+		<h1>Peter Shafer</h1>
+		<h3>Web Developer &amp; Computer Technician</h3>
+		<div></div>
+		<h3>Knowledgable in...</h3>
+		<p>XHTML, CSS, Javascript, PHP, MySQL, Python &amp; Django,</p>
+		<p>Computer Hardware, Windows, Linux, and Apple Systems</p>
+		<div></div>
+		<h3>Resume or portfolio available upon request.</h3>
+		<div></div>
+		<h2><a href="http://mailhide.recaptcha.net/d?k=01GdVITX8tti9gVOYZiB3r-g==&amp;c=r3WzLbDZXJsYSt2QI8wH6lH63DDkrbXwuGdLSQg9W78=" onclick="window.open('http://mailhide.recaptcha.net/d?k=01GdVITX8tti9gVOYZiB3r-g==&amp;c=r3WzLbDZXJsYSt2QI8wH6lH63DDkrbXwuGdLSQg9W78=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Click for Email Address</a><span>Contact information available at <a href="http://www.1st-soft.net/card">http://www.1st-soft.net/card</a></span></h2>
+	</div>
+</div>
+<div id="valid">
+	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" style="border:0;" height="31" width="88" /></a></p>
+	<p><a href="http://jigsaw.w3.org/css-validator/check?uri=referer&amp;profile=css3"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a></p>
+</div>
+</body>
+</html>

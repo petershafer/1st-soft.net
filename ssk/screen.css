@@ -1,0 +1,170 @@
+
+@media all
+{
+	body{
+		margin:0px;
+		padding:0px;
+	}
+	#main{
+		display:block;
+		width:820px;
+		margin: 0px auto;
+		text-align:center;
+		background-color:white;
+		padding: 0px 10px;
+	}
+	
+	.title h1{
+		font-size: 32px;
+	}
+	.title{
+		margin-bottom: 10px;
+	}
+	
+	div.column{
+		float: left;
+	}
+	
+	div.sidecolumn{
+		margin-left: 0px;
+		width: 150px;
+	}
+	div.maincolumn{
+		margin-left: 0px;
+		width:500px;
+	}
+	#results{
+		margin-top:15px;
+		position:relative;
+		text-align:left;
+	}
+	
+	.headline{
+		margin: 5px 10px;
+		padding: 5px;
+		text-align:left;
+		border-bottom-style:solid;
+		border-bottom-width:2px;
+		border-bottom-color:green;
+	}
+	
+	.exit{
+		float:right;
+		cursor:pointer;
+	}
+	
+	.user-ui-icon{
+		margin:1px;
+	}
+	
+	
+	li{
+		font-size:1em;
+	}
+	
+	.box{
+		border-style:solid;
+		border-color:#005500;
+		border-width:1px;
+		background-color:#449944;
+		padding: 5px;
+		width:120px; 
+		margin: 0px auto 10px auto;
+	}
+	
+	.small{
+		font-size:0.65em;
+		
+	}
+	
+	#tabs div{
+		min-height:250px;
+	}
+	
+	.waiting{
+		text-align:center;
+	}
+	
+	.resultnav{
+		text-align:center;
+	}
+	
+	li p.resulttitle{
+		font-size:16px;
+	}
+	
+	li p.resultdesc{
+		font-size:14px;
+	}
+	
+	li p{
+		margin:0px;
+		padding:0px 0px 10px 0px;
+	}
+	
+	li{
+		margin-bottom:5px;
+	}
+	h5{
+		margin:0px;
+		padding:0px;
+	}
+	.clipit{
+		cursor:pointer;
+	}
+	#clipboard{
+		text-align:left;
+		margin-bottom:5px;
+	}
+	#savecanvas{
+		display:none;
+	}
+	#hist{
+		text-align:left;
+	}
+	#hist p{
+		margin:2px;
+		font-size:14px;
+	}
+	#hist p a{
+		color:white;
+	}
+	#hist p img{
+		vertical-align:middle;
+		cursor:pointer;
+	}
+	
+}
+
+@media screen
+{
+	
+	#handheldsplash{
+		display:none;
+	}
+	/*
+	#handheldsplash{
+		display:block;
+		text-align:center;
+		background-color:yellow;
+		padding:3px;
+		border-bottom-style: solid;
+		border-width: 2px;
+		border-color: orange;
+	}
+	*/
+}
+
+@media handheld
+{
+	#handheldsplash{
+		display:block;
+		text-align:center;
+		background-color:yellow;
+		padding:3px;
+		border-bottom-style: solid;
+		border-width: 2px;
+		border-color: orange;
+	}
+}
+

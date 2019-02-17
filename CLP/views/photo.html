@@ -1,0 +1,26 @@
+<h2 class="btn-full"><span ng-show="current_photo.title">{{current_photo.title}}</span><span ng-hide="current_photo.title">Untitled Photograph</span></h2>
+<h3 class="btn-mobile"><span ng-show="current_photo.title">{{current_photo.title}}</span><span ng-hide="current_photo.title">Untitled Photograph</span></h3>
+
+<div class="row-fluid">
+<div class="thumbnail span8" style="background-color:rgba(131,158,216,0.25)">
+	<img style="width:100%" ng-src="{{url}}">
+	<div style="margin-top:15px;margin-left:10px;margin-right:10px;margin-bottom:10px" class="caption well">
+		<div style="text-align:right;float:right;width:70px">
+			<p style="margin-bottom:5px"><button class="btn btn-info" ng-click="toggleSaved(current_photo)">
+				<span ng-hide="is_saved(current_photo)">Save</span>
+				<span ng-show="is_saved(current_photo)">Unsave</span>
+			</button></p>
+			<p style="margin-bottom:5px"><iframe ng-src="//www.facebook.com/plugins/like.php?href={{encode(page)}}&amp;width=70&amp;height=20&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:20px" allowtransparency="true"></iframe></p>
+		</div>
+		<p ng-show="current_photo.title">{{current_photo.title}}</p>
+		<p ng-show="current_photo.source"><b>Source</b> <a ng-href="{{current_photo.source}}" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display:block; max-width:75%" target="_blank">{{current_photo.source}}</a></p>
+		<p ng-show="current_photo.tags.length">
+			<b>Tagged</b>
+			<span ng-repeat="tag in current_photo.tags">
+				<a ng-href="#/tag/{{encode(tag)}}/" data-dismiss="lightbox" data-target="fullview"><span class="label label-info">{{tag}}</span></a>
+			</span>
+		</p>
+		<p ng-show="current_photo.description">{{current_photo.description}}</p>
+	</div>
+</div>
+</div>

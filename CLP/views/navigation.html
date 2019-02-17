@@ -1,0 +1,9 @@
+<div ng-controller="NavigationCtrl">
+	<p><a class="btn btn-mobile" style="font-size:14px" data-toggle="collapse" data-target=".sidebar-responsive-collapse"><i class="icon-list"></i> Tags</a></p>
+	<ul class="nav nav-pills nav-stacked nav-collapse collapse sidebar-responsive-collapse">
+		<li data-toggle="collapse" data-target=".sidebar-responsive-collapse" ng-class="{'active':!params.tag}"><a href="#/"><b>All Photos</b></a></li>
+		<li data-toggle="collapse" data-target=".sidebar-responsive-collapse" ng-class="{'active':params.tag=='Saved'}"><a href="#/tag/Saved/"><span class="badge badge-inverse pull-right">{{total_saved}}</span><b>Saved Photos</b></a></li>
+		<li style="text-align:center"><input placeholder="Search Tags" ng-model="search" type="text" style="margin-top:15px;margin-bottom:15px;width:90%" class="" style="width:inherit"></li>
+		<li data-toggle="collapse" data-target=".sidebar-responsive-collapse" ng-class="{'active':params.tag==tag.key}" ng-repeat="tag in tags | filter:search"><a ng-href="#/tag/{{encode(tag.key)}}/" style=""><span class="badge badge-inverse pull-right">{{tag.value}}</span>{{tag.key}}</a></li>
+	</ul>
+</div>

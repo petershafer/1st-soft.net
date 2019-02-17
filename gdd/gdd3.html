@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Google Docs: Download GM Script by Peter Shafer</title>
+<link rel="alternate" type="application/rss+xml" title="GDD Update Feed" href="http://www.1st-soft.net/gdd/updates.rss" />
+<link rel="SHORTCUT ICON" href="http://www.1st-soft.net/gdd/favicon.ico">
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+#thisismypage{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #B7CFFF;
+	padding-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+p{
+	margin: 10px 10px;
+	font-size: small;
+}
+h1{
+	text-align: center;
+	margin: 0px;
+	padding: 10px 10px;
+	background-image: url('header.png');
+	background-repeat: repeat-x;
+}
+h2{
+	margin: 10px 10px;
+}
+p.img{
+	text-align: center;
+}
+a{
+	color: #0005C6;
+}
+div.column{
+	float: left;
+	width: 47%;
+	padding: 3px;
+	margin: 3px;
+}
+div.endColumn{
+	clear:both;
+}
+span.date{
+	font-weight: bold;
+}
+hr{
+	background-color: black;
+	height: 3px;
+	width: 90%;
+	border: 0;
+}
+</style>
+</head>
+<body>
+
+<div style="margin-left:auto;margin-right:auto;width:728px;text-align:center;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 728;
+google_ad_height = 15;
+google_ad_format = "728x15_0ads_al_s";
+//2007-04-26: gdd
+google_ad_channel = "2622726070";
+google_color_border = "B7CFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0005C6";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div id="thisismypage">
+
+<div style="text-align: center; background-image: url('header.png'); background-repeat: repeat-x; padding:20px 0px 5px 0px;"><img src="GoogleDocsHeader.png" alt="Header" /></div>
+<!--<h1>Google Docs Download</h1>-->
+
+<p style="text-align:center; max-width: 1024px; margin-left:auto; margin-right:auto; padding: 0px 5px;">Users of the Google Docs web service can easily access and manage their documents in one location online.
+However, they still would like to be able to back up and archive their files on their own systems.  Unfortunately that isn't so easy and requires you to
+download backups of each document individually.  The Google Download Script was written to help streamline this process when combined with a download manager like 
+<a href="http://www.downthemall.net">DownThemAll</a>.</p>
+
+<hr/>
+
+<div class="column">
+
+
+<h2>How it works</h2>
+
+<p>Google Doc Download is installed as a <a href="http://www.greasespot.net">Grease Monkey</a>.  Once installed here is what you see on your google documents control panel.</p>
+
+<p class="img"><img src="s1b.png" alt="screen shot 1" style="width:100%; max-width:536px;" /></p>
+
+<p style="clear:right;">Just navigate to the document list that you wish to download and select the documents you want to download
+by clicking their checkboxes or click the select: all link at the bottom of the page.  
+Click the drop down menu on the right side of the page that reads "Download Your Documents" and select a format.
+A new window will open and you now have a list of links to download all of the documents that you selected.</p>
+
+<p class="img"><img src="s2b.png" alt="screen shot 2" style="max-width:339px; width:100%;" /></p>
+
+<p>Now use <a href="http://www.downthemall.net">DownThemAll</a> to mass download your 
+documents!  You have now backed up your documents from google docs. You can archive them to the medium of your choosing and then place
+it under your mattress so you can sleep at night knowing that if google exploded that night you would still have your files.</p>
+
+
+
+
+<h2>Bugs &amp; Contact</h2>
+
+<p>If you find a blue bar at the bottom of any of your documents use the &quot;Edit&quot; -&gt; &quot;Edit HTML&quot; to find and delete the following line of html:</p>
+
+<code style="margin:20px;background-color:white;display:block;padding:10px;">&lt;div style=&quot;padding: 7px; font-family: verdana; width: 200px; background-color: rgb(103, 167, 227); color: white;&quot; id=&quot;GDDError&quot;&gt;&lt;/div&gt;</code>
+
+<p>Remember to scroll to the bottom of your doc list if you have more than 50 documents.  Google streams this list as you scroll down.  </p>
+
+<p>In some cases, you may select a file format to download your documents as that is not supported by a certain document type (for example, you cannot download a pdf you uploaded as a word document.)  In these
+cases, GDD will pick the next closest format for those documents.</p>
+
+<p>GDD relies on xpath in order to do its job, so when google updates the html of the page, GDD may become confused and stop working.</p>
+
+<p>You can let me know if you're having problems through the <a href="https://spreadsheets.google.com/viewform?key=psnnRouvdB-XHzZbgjZoURw">GDD Bug Report Form</a> and you can always drop me a line at <b>gdd at 1st-soft.net</b> as well.  Any and all feedback is welcome.</p>
+
+
+
+
+<p style="text-align:center; display:block; padding-top:10px; padding-bottom:10px;">
+<!--<a href="http://www.spreadfirefox.com/node&id=0&t=305"><img border="0" style="vertical-align:middle;" alt="Firefox 3" title="Firefox 3" src="http://sfx-images.mozilla.org/affiliates/Buttons/firefox3/110x32_best-yet.png"/></a>-->
+<a href="http://www.spreadfirefox.com/node&id=0&t=317"><img style="vertical-align:middle;" border="0" alt="Firefox 3" title="Firefox 3" src="http://sfx-images.mozilla.org/affiliates/Buttons/firefox3/FF3b80x15_square.gif"/></a>
+&nbsp;<a href="http://www.greasespot.net"><img style="vertical-align:middle;" src="greasemonkey.png" border="0" title="Get Greasemonkey" /></a> <a href="http://www.greasespot.net"><span style="font-size:10px;">Greasemonkey</span></a>&nbsp;
+<a href="http://www.downthemall.net/"><img style="vertical-align:middle;" border="0" src="http://www.downthemall.net/images/buttons/8015_3.gif" alt="DownTHEMall: Firefox Download Manager" /></a>
+<!--<a href="http://www.downthemall.net/"><img style="vertical-align:middle;" border="0" src="http://www.downthemall.net/images/buttons/8831_1.gif" alt="DownTHEMall: Firefox Download Manager" /></a>-->
+</p>
+
+
+<p style="text-align:center;">Google Docs: Download was written by Peter Shafer, student developer, originally in April 2007.<br/>Contact: <b>peter at 1st-soft.net</b><br/>
+Thanks to <a href="http://www.plaidbuttonup.com/">F.D. Cleary</a> for helping me debug the script. </p>
+
+
+</div>
+
+<div class="column">
+
+<div style="width:120px; float:right; margin:0px 10px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+/* 120x600, created 8/19/08 */
+google_ad_slot = "9275643205";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<h2>Download it</h2>
+
+
+<div style="float:left;">
+<p><a style="font-weight:bold; font-size:large; color:green; white-space: nowrap;" href="googledocdownload.user.js">Install Now!</a></p>
+</div>
+
+
+
+<div style="float:left; padding: 4px 0px;">
+<p><img src="feed-icon-14x14.png" style="vertical-align:middle;" /> <a href="updates.rss" style="white-space: nowrap;">Script updates feed</a></p>
+</div>
+
+<div style="padding: 10px 10px; float:left;">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+</form>
+</div>
+
+<div style="clear:left;"></div>
+
+
+<!-- Creative Commons License -->
+<p><a href="http://creativecommons.org/licenses/GPL/2.0/"><img alt="CC-GNU GPL" style="border-width:0px;height:31px; float:left; margin:3px;" src="http://creativecommons.org/images/public/cc-GPL-a.png" /></a></p>
+<p><a href="http://creativecommons.org/licenses/GPL/2.0/" style="white-space: nowrap;">This software is licensed<br/>under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.</p>
+<div style="clear:left;"></div>
+<!-- /Creative Commons License -->
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+
+
+<h2>Updates</h2>
+
+<p><span class="date">June 3rd, 2009:</span> Fixed another bug having to do with presentations.</p>
+
+<p><span class="date">December 7th, 2008:</span> Fixed a bug having to do with presentations.</p>
+
+<p><span class="date">September 10th, 2008:</span> GDD has been updated to fix a bug with Google Apps for Your Domain users.</p>
+
+<p><span class="date">September 8th, 2008:</span> GDD's xpath queries have been re-written to ensure consistency and eliminate bugs when attempting to generate your download list.</p>
+
+<p><span class="date">September 7th, 2008:</span> Hi everyone.  I've been working on some fixes for GDD over the past couple of weeks but I've been a little slow to the punch since classes have started again.  I'd like to thank everyone who has been using the bug report form or contacting me by email and I'm sorry if I haven't gotten back to you sooner.<br/>Hang tight and I'll try to get this straightened out as quickly as I can.</p>
+
+<p><span class="date">August 19th, 2008:</span> Errors have been popping up sporadically over the past month.  This version of GDD reports errors with greater detail and also includes a work around for downloading your documents when the script does not work on the main interface.  Visit the <a href="https://docs.google.com/m">mobile version of google docs</a>.  All documents listed will automatically link to downloads and will be ready for downthemall.  You can click the &quot;Show All&quot; link to show downloads for all documents (unfortunately excluding presentation).  Links are also included to select the format you wish to download your documents in.</p>
+
+<p><span class="date">June 23rd, 2008:</span> GDD 2.0 is now available and features better error handling as well as automatic update notices.  Thanks Jeremy for the feature request.  Also, check out GDD (Hack #8) in <a href="http://www.amazon.com/Google-Apps-Hacks-Philipp-Lenssen/dp/059651588X">Google Apps Hacks</a> by Philipp Lenssen of <a href="http://blogoscoped.com/">Google Blogoscoped</a>.</p>
+
+<p><span class="date">June 15th, 2008:</span> Support for downloading pdfs has been integrated.  Please let me know if you find any bugs with it.</p>
+
+<p><span class="date">June 14th, 2008:</span>  There was a minor incompatibility between the script and the new version of greasemonkey which has been fixed.  Support for backing up your uploaded PDFs will be added soon.</p>
+
+<p><span class="date">May 24th, 2008:</span>  It has been found that GDD experiences problems when Google Gears is enabled.  A fix <del>is being</del> has been developed.</p>
+
+<p><span class="date">April 9th, 2008:</span>  The script has been updated to allow powerpoint file downloads.  Also, the &quot;download all&quot; option has been removed due to a change in how document feeds are accessed.</p>
+
+<p><span class="date">March 1st, 2008:</span>  Problems caused by recent Google Docs updates have been fixed.  A new option to select all documents for download has also been added.  Please update your copy of GDD and give it a test drive.</p>
+
+<p><span class="date">December 12th, 2007:</span>  A compatibility bug has been fixed.</p>
+
+<p><span class="date">September 25th, 2007:</span>  GDD has been updated to reflect new updates to Google Docs.  Download links work correctly again and support for presentations has been added.</p>
+
+<p><span class="date">July 31st, 2007:</span>  Fixed a bug that prevents you from clicking certain links.  I've also tweaked where the drop down menu appears for Google Apps and Google Docs implementations that still use the old blue toolbar at the top of the page.  Thanks Attila!</p>
+
+<p><span class="date">July 27th, 2007:</span>  Support for "Google Apps for your domain" was added.  Thanks for the feedback James!</p>
+
+<p><span class="date">July 8th, 2007:</span>  I have completely re-written the script work with the new updates for Google Docs.</p>
+
+
+</div>
+
+
+<div class="endColumn"></div>
+
+
+<hr/>
+
+<div style="margin-left:auto;margin-right:auto;text-align:center;width:728px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+//2007-04-26: gdd
+google_ad_channel = "2622726070";
+google_color_border = "B7CFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0005C6";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+
+</div>
+
+</body>
+</html>

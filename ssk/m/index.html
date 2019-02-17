@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Safety Sidekick</title>
+		<style>
+			body{
+				margin: 0px;
+				padding: 0px;
+			}
+			p{
+				margin:0px;
+				padding:0px;
+				font-size: 1.5em;
+				margin-bottom:0.5em;
+				text-align: center;
+			}
+			h1{
+				font-size: 2.5em;
+				color: white;
+				background-color: green;
+				text-align: center;
+				padding: 0.25em;
+			}
+			input{
+				font-size: 1em;
+				text-align: center;
+			}
+			p.option{
+				background-color:green;
+				color:white;
+				padding: 0.25em 0em;
+			}
+			p.input{
+				
+			}	
+			
+		</style>
+	</head>
+	<body>
+		
+		<h1>Safety Sidekick</h1>
+		<form action="../submit.php" method="post">
+			<input type="hidden" name="forward" value="true" />
+			<p class="input"><input type="text" name="term" style="width:90%;padding:0.3em 0.1em;" /><br/>
+			<input type="submit" value="Search" style="padding:0.5em 1em;" /></p>
+			<p class="option"><input type="radio" name="mode" value="www" id="www" checked="checked" /> <label for="www">WWW</label></p>
+			<p class="option"><input type="radio" name="mode" value="msha" id="msha" /> <label for="msha">MSHA</label></p>
+			<p class="option"><input type="radio" name="mode" value="osha" id="osha" /> <label for="osha">OSHA</label></p>
+			<p class="option"><input type="radio" name="mode" value="niosh" id="niosh" /> <label for="niosh">NIOSH</label></p>
+			
+		</form>
+		
+		<a name="tagcloud"></a>
+		<div id="tagcloud">
+			
+		</div>
+		
+	</body>
+</html>

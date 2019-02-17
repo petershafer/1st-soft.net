@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+Each Section seperates the different
+types of controls.  For instance, location
+option tags are seperate from food type
+tags.
+
+Each control represents a button, or button
+duo that can be switched.  The name represents
+what will be on the button label.  The mode
+determines whether to eliminate locations that
+have that tag or locations that do not have that
+tag.  (1 requires a location to have the tag, 0
+requires that it does not.)  The tag field is the
+name of the tag to look for in a location.  The
+switch field is used in case you want to have buttons
+for both 1 and 0 options while eliminating the
+possibility of having both turned on at the same time.
+-->
+<controls>
+    <section name="Options">
+	    <control name="Places that are close" mode="1" tag="Close" switch="" />
+		<control name="Places that aren't far away" mode="0" tag="Far Away" switch="" />
+		<control name="Places that take cards" mode="0" tag="No Card" switch="" />
+		<control name="Places that we go to often" mode="0" tag="Unoften" switch="Places that we don't go to often" />
+		<control name="Only fast food" mode="0" tag="Not Fast" switch="" />
+		<control name="Breakfast" mode="1" tag="Breakfast" switch="" />
+		<control name="Dinner" mode="1" tag="Dinner" switch="" />
+	</section>
+	<section name="Types of Food">
+	    <control name="Variety" mode="1" tag="Variety" switch="" />
+	    <control name="Chicken" mode="1" tag="Chicken" switch="" />
+	    <control name="Burgers" mode="1" tag="Burgers" switch="" />
+		<control name="Salad" mode="1" tag="Salad" switch="" />
+		<control name="Coffee" mode="1" tag="Coffee" switch="" />
+		<control name="Soup" mode="1" tag="Soup" switch="" />
+		<control name="Chinese" mode="1" tag="Chinese" switch="" />
+		<control name="Mexican" mode="1" tag="Mexican" switch="" />
+		<control name="Hot Dogs" mode="1" tag="Hot Dogs" switch="" />
+		<control name="Ice Cream" mode="1" tag="Ice Cream" switch="" />
+		<control name="Sandwiches" mode="1" tag="Sandwiches" switch="" />
+		<control name="Salad" mode="1" tag="Salad" switch="" />
+		<control name="Pizza" mode="1" tag="Pizza" switch="" />
+		<control name="Pasta" mode="1" tag="Pasta" switch="" />
+		<control name="Seafood" mode="1" tag="Seafood" switch="" />
+	</section>
+</controls>

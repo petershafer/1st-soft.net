@@ -1,0 +1,41 @@
+body{
+	background-color: black;
+	color: #c0c0c0;
+	font-family: courier;
+}
+
+div#title{
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	font-family: verdana, arial;
+}
+
+div#title h1{
+	margin: 10px;
+	padding: 0px;
+	font-size: 36px;
+}
+
+div#title h2{
+	margin: 10px;
+	padding: 0px;
+	font-size: 18px;
+}
+
+div#page, div#index{
+	position: absolute;
+	left: 10px;
+	top: 125px;
+}
+
+a{
+	text-decoration: none;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	color: #f0f0f0;
+}
+
+p{
+	margin-left: 10px;
+}

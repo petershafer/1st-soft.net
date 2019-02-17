@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Google Notebook: Download Updates</title>
+    <link>http://www.1st-soft.net/gnd/</link>
+    <description>Stay up to date with GND.</description>
+    <item>
+      <title>GND 1.00</title>
+      <description>
+        <![CDATA[Google Notebook: Download has launched]]>
+      </description>
+      <link>http://www.1st-soft.net/gnd/</link>
+      <pubDate>Wed, 20 Aug 2008 20:00:00 -0600</pubDate>
+    </item>
+  </channel>
+</rss>

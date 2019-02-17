@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>1st-Soft.net: Nothing in particular.  Just interesting bits of information.</title>
+		<link rel="stylesheet" type="text/css" href="1st-Soft.css" />   <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAPDWEf5BzxXrRmQ0tj9sl2BTBGn0eR6UKylPSI1q7Ee9tcL2KHBQqLKgAkQiNqic4Ma4v9SPAnrfKQA"></script>
+	    <script type="text/javascript">
+	 
+	    google.load("feeds", "1");
+	 
+	    function initialize() {
+	      var feed = new google.feeds.Feed("http://1st-soft.soup.io/rss");
+	      feed.load(function(result) {
+	        if (!result.error) {
+	          var container = document.getElementById("feed");
+	          for (var i = 0; i < result.feed.entries.length && i < 15; i++) {
+	            var entry = result.feed.entries[i];
+	            var item = document.createElement("p");
+	            var link = document.createElement("a");
+				link.href = entry.link;
+				link.appendChild(document.createTextNode(entry.title));
+				item.appendChild(link);
+	            container.appendChild(item);
+	          }
+	        }
+	      });
+	    }
+	    google.setOnLoadCallback(initialize);
+	 
+	    </script>
+	 
+	</head>
+	<body>
+		
+		<div id="title">
+			<h1>1st-Soft.net</h1>
+
+			<h2>Nothing in particular.  Just interesting bits of information.</h2>
+		</div>
+		
+		<div id="index">
+		
+			
+			<h2>Pages</h2>
+			<p><a href="http://www.1st-soft.net/gdd/">Back up your google documents.</a></p>
+			
+			<p><a href="http://www.1st-soft.net/gnd/">Back up your google notebooks.</a></p>
+			
+			<p><a href="http://www.1st-soft.net/grle/">Save your starred items in google reader.</a></p>
+			
+			<h2>Tips</h2>
+			
+			<p><a href="pages/burnrights.html">Nero 5 &amp; 6: Give cd-burning access to windows 2000/xp users.</a></p>
+			
+			<p><a href="pages/xampperror0xc0150002.html">XAMPP - Failed to Initialize Properly (0xc0150002).</a></p>
+			
+			<p>Protip: The internet is a terrible place.</p>
+			
+			<h2><a href="http://1st-soft.soup.io">Items from my soup</a></h2>
+			<div id="feed"></div>
+			
+		</div>
+		
+	</body>
+</html>
