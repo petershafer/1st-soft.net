@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Google Reader Link Extractor by Peter Shafer</title>
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+#thisismypage{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #B7CFFF;
+	padding-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+p{
+	margin: 10px 10px;
+}
+h1{
+	text-align: center;
+	margin: 0px;
+	padding: 10px 10px;
+	background-image: url('header.png');
+}
+h2{
+	margin: 10px 10px;
+}
+p.img{
+	text-align: center;
+}
+a{
+	color: #0005C6;
+}
+</style>
+</head>
+<body>
+
+<div style="margin-left:auto;margin-right:auto;width:728px;text-align:center;">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 728;
+google_ad_height = 15;
+google_ad_format = "728x15_0ads_al_s";
+//2007-05-25: grle
+google_ad_channel = "1619809048";
+google_color_border = "B7CFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0005C6";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+<div id="thisismypage">
+
+<h1>Google Reader Link Extractor</h1>
+
+
+
+<p>I recently converted from using Bloglines to Google Reader, and one of the problems that I was running into
+was that my starred item list was growing far too large.  I needed to find a way to archive the articles to my
+delicious account.  This link extractor allows me to do just that and more.</p>
+
+<h2 style="text-align:center;">How it works</h2>
+
+<p style="text-align:center;">Just visit the section with the stories that you wish to archive.</p>
+<p class="img"><img src="s4.png" alt="Screenshot" /></p>
+<p style="text-align:center;">This can be your starred items list,
+your shared items list, or any section in google reader with a list of articles.  Next, make sure that they all have appeared on
+the list(scroll down a lot) and click the bookmarklet.  A new page opens with a bookmark file.
+</p>
+<p style="text-align:center;">Save the source code to your harddrive and then import it into delicious or your browsers bookmarks.
+</p>
+<p style="text-align:center;">
+Note, the tag GoogleReader is added to any links you import into delicious.
+</p>
+
+<h2>Install it!</h2>
+
+
+
+<p>This bookmarklet only works in firefox.  Install it if you don't have it already.  Right click your bookmark toolbar and add a new link.  Name it whatever you want and place the following text in the location field.</p>
+
+<div style="margin-left:auto;margin-right:auto;width:950px;">
+<p>Drag this bookmarklet to your bookmarks toolbar. <a href="javascript: if(document.location.href.indexOf(&quot;www.google.com/reader/view/&quot;)!=-1){var result = document.evaluate(&quot;//*[@class=&apos;entry-original&apos;]/@href&quot;,document,null,XPathResult.ANY_TYPE,null); var result2 = document.evaluate(&quot;//*[@class=&apos;entry-title&apos;]/text()&quot;,document,null,XPathResult.ANY_TYPE,null); var content = &quot;&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;\n&lt;META HTTP-EQUIV=\&quot;Content-Type\&quot; CONTENT=\&quot;text/html; charset=UTF-8\&quot;&gt;\n&lt;!-- This is an\nautomatically generated file.\nIt will be read and overwritten.\nDo Not Edit! --&gt;\n&lt;TITLE&gt;Bookmarks&lt;/TITLE&gt;\n&lt;H1&gt;Bookmarks&lt;/H1&gt;\n&lt;DL&gt;&lt;p&gt;\n&quot;; var item = result.iterateNext(); var item2 = result2.iterateNext();if(item == null){result = document.evaluate(&quot;//*[@class=&apos;entry-title-link&apos;]/@href&quot;,document,null,XPathResult.ANY_TYPE,null);result2 = document.evaluate(&quot;//*[@class=&apos;entry-title-link&apos;]/text()&quot;,document,null,XPathResult.ANY_TYPE,null); item = result.iterateNext();item2 = result2.iterateNext();} while(item != null){content+=&quot;&lt;DT&gt;&lt;A HREF=\&quot;&quot;+item.nodeValue+&quot;\&quot; TAGS=\&quot;GoogleReader\&quot;&gt;&quot;+item2.nodeValue+&quot;&lt;/A&gt;\n&quot;; item = result.iterateNext(); item2 = result2.iterateNext();} content += &quot;&lt;/DL&gt;&lt;p&gt;&quot;; var newwin = window.open(&quot;about:blank&quot;,&quot;_blank&quot;); newwin.document.write(content); newwin.document.close();}else{document.location.href=&quot;http://www.google.com/reader/view/&quot;}">Export Links</a></p>
+</div>
+
+<div style="width:500px; margin-left:auto; margin-right:auto;">
+<div style="float:left;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as_rimg";
+google_cpa_choice = "CAAQ_fCXhAIaCM3ZaPrxIggYKPG193MwAA";
+google_ad_channel = "6726419411";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<p style="float:left; margin-top:0px;"><img src="s1.png" alt="Screenshot" /></p>
+<br style="clear:both;" />
+</div>
+
+<!--<h2>Updates</h2>
+
+
+<h2>To do</h2>-->
+
+<h2>Bugs &amp; Contact</h2>
+
+<p>Check back here if the bookmarklet is no longer working.  It uses xpath expressions to query for information and if google decides
+to change the html then the code is liable to stop working.  You can contact me at peter at 1st-soft.net.</p>
+
+<div style="margin-left:auto;margin-right:auto;text-align:center;width:728px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9350158916481986";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+//2007-05-25: grle
+google_ad_channel = "1619809048";
+google_color_border = "B7CFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<h2>License</h2>
+<p>Google Reader Link Extractor was written by Peter Shafer, student developer, in May 2007. Contact: peter at 1st-soft.net</p>
+<p>
+
+<!-- Creative Commons License -->
+<a href="http://creativecommons.org/licenses/GPL/2.0/">
+<img alt="CC-GNU GPL" style="border-width:0px;" src="http://creativecommons.org/images
+/public/cc-GPL-a.png" /></a><br />
+This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.
+<!-- /Creative Commons License -->
+</p>
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+</div>
+
+</body>
+</html>
